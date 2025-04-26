@@ -1,4 +1,10 @@
 package com;
+import java.io.File;
+import java.io.FileOutputStream;
+
+import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
+import org.docx4j.convert.out.pdf.PdfConversion;
+import org.docx4j.convert.out.pdf.viaXSLFO.Conversion;
 
 public class DocxToPdfConverter {
     public static void main(String[] args) {
