@@ -12,11 +12,11 @@ public class DocToPDF {
     public static void main(String[] args) {
 
         try {
-            InputStream templateInputStream = new FileInputStream("D:\\\\Workspace\\\\New\\\\Sample.docx");
+            InputStream templateInputStream = new FileInputStream("D:\\Workspace\\physical security");
             WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.load(templateInputStream);
             MainDocumentPart documentPart = wordMLPackage.getMainDocumentPart();
 
-            String outputfilepath = "D:\\\\Workspace\\\\New\\\\Sample.pdf";
+            String outputfilepath = "D:\\Workspace\\Sample.pdf";
             FileOutputStream os = new FileOutputStream(outputfilepath);
             Docx4J.toPDF(wordMLPackage,os);
             os.flush();
