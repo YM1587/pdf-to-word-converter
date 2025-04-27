@@ -7,7 +7,7 @@ import org.docx4j.Docx4J;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
 import org.docx4j.openpackaging.parts.WordprocessingML.MainDocumentPart;
 
-public class DocToPDF {
+public class DocxToPdfConverter {
 
     public static void main(String[] args) {
 
