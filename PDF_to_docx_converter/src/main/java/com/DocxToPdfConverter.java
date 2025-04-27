@@ -12,7 +12,7 @@ public class DocxToPdfConverter {
     public static void main(String[] args) {
 
         try {
-            InputStream templateInputStream = new FileInputStream("D:\\Workspace\\physical security");
+            InputStream templateInputStream = new FileInputStream("D:\\Workspace\\physical security.docx");
             WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.load(templateInputStream);
             MainDocumentPart documentPart = wordMLPackage.getMainDocumentPart();
 
