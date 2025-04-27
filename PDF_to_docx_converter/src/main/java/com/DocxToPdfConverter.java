@@ -1,29 +1,30 @@
 package com;
-import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStream;
 
+import org.docx4j.Docx4J;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
-import org.docx4j.convert.out.pdf.PdfConversion;
-import org.docx4j.convert.out.pdf.viaXSLFO.Conversion;
+import org.docx4j.openpackaging.parts.WordprocessingML.MainDocumentPart;
 
-public class DocxToPdfConverter {
+public class DocToPDF {
+
     public static void main(String[] args) {
+
         try {
-            // Load the Word document
-            File inputFile = new File("input.docx");
-            WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.load(inputFile);
+            InputStream templateInputStream = new FileInputStream("D:\\\\Workspace\\\\New\\\\Sample.docx");
+            WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.load(templateInputStream);
+            MainDocumentPart documentPart = wordMLPackage.getMainDocumentPart();
 
-            // Output PDF file
-            FileOutputStream os = new FileOutputStream("output.pdf");
+            String outputfilepath = "D:\\\\Workspace\\\\New\\\\Sample.pdf";
+            FileOutputStream os = new FileOutputStream(outputfilepath);
+            Docx4J.toPDF(wordMLPackage,os);
+            os.flush();
+            os.close();
+        } catch (Throwable e) {
 
-            // Convert to PDF
-            PdfConversion converter = new Conversion(wordMLPackage);
-            converter.output(os, null);
-
-            System.out.println("Conversion complete. PDF saved as output.pdf");
-        } catch (Exception e) {
             e.printStackTrace();
         }
-        
     }
+
 }

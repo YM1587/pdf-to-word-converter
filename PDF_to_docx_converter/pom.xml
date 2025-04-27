@@ -24,8 +24,15 @@
         <dependency>
             <groupId>org.docx4j</groupId>
             <artifactId>docx4j</artifactId>
-            <version>11.4.10</version>
+            <version>6.1.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j-pdf</artifactId>
+            <version>6.1.1</version>
+        </dependency>
+
     </dependencies>
 
 </project>
