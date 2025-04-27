@@ -23,14 +23,23 @@
     <dependencies>
         <dependency>
             <groupId>org.docx4j</groupId>
-            <artifactId>docx4j</artifactId>
-            <version>6.1.1</version>
+            <artifactId>docx4j-JAXB-Internal</artifactId>
+            <version>8.0.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.docx4j</groupId>
-            <artifactId>docx4j-pdf</artifactId>
-            <version>6.1.1</version>
+            <artifactId>docx4j-JAXB-ReferenceImpl</artifactId>
+            <version>8.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j-JAXB-MOXy</artifactId>
+            <version>8.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j-export-fo</artifactId>
+            <version>8.0.0</version>
         </dependency>
 
     </dependencies>
