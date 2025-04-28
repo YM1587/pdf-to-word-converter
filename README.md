@@ -1,8 +1,8 @@
-# DOCX to PDF Converter
+## DOCX to PDF Converter
 
 This project is a simple Java application that **converts a `.docx` Word document to `.pdf` format** using the **docx4j** library.
 
----
+-
 
 ## 📚 Technologies Used
 
@@ -12,7 +12,7 @@ This project is a simple Java application that **converts a `.docx` Word documen
 - IDE: IntelliJ IDEA 
 - File I/O (Java Standard Library)
 
----
+-
 
 ## 🚀 How to Run
 
