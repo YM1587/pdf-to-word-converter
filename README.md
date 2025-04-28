@@ -2,7 +2,7 @@
 
 This project is a simple Java application that **converts a `.docx` Word document to `.pdf` format** using the **docx4j** library.
 
---
+----
 
 ## 📚 Technologies Used
 
@@ -11,8 +11,13 @@ This project is a simple Java application that **converts a `.docx` Word documen
 - docx4j 8.0.0
 - IDE: IntelliJ IDEA 
 - File I/O (Java Standard Library)
+[![Java](https://img.shields.io/badge/Java-17+-blue.svg)](https://adoptopenjdk.net/)
+[![Maven](https://img.shields.io/badge/Maven-Build-Passing-brightgreen.svg)](https://maven.apache.org/)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
---
+> Simple Java application that converts `.docx` Word documents to `.pdf` using **docx4j** library.
+
+---
 
 ## 🚀 How to Run
 
